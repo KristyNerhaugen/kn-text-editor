@@ -1,6 +1,7 @@
 import { Workbox } from "workbox-window";
 import Editor from "./editor";
 import "./database";
+// imports css files
 import "../css/style.css";
 // import logo from images folder
 import Logo from "../images/logo.png";
