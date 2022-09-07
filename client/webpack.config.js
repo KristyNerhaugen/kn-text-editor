@@ -37,10 +37,11 @@ module.exports = () => {
         start_url: "./",
         publicPath: "./",
       }),
-      new InjectManifest({
-        swSrc: "./sw.js",
-        swDest: "service-worker.js",
-      }),
+      // will need to InjectManifest
+      // new InjectManifest({
+      //   swSrc: "./sw.js",
+      //   swDest: "service-worker.js",
+      // }),
     ],
 
     module: {
