@@ -52,6 +52,7 @@ module.exports = () => {
           test: /\.css$/i,
           use: ["style-loader", "css-loader"],
         },
+        // rule to handle image files
         {
           test: /\.(png|svg|jpg|jpeg|gif)$/i,
           type: "asset/resource",
