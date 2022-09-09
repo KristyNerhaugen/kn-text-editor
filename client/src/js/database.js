@@ -1,7 +1,6 @@
 import { openDB } from "idb";
 
-// added export so initdb can be inported into index.js
-export const initdb = async () =>
+const initdb = async () =>
   openDB("jate", 1, {
     upgrade(db) {
       if (db.objectStoreNames.contains("jate")) {
