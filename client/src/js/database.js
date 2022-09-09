@@ -14,7 +14,7 @@ const initdb = async () =>
 
 // Logic for a method that accepts some content and adds it to the database
 // function to PUT to database
-export const putDb = async (content) => {
+export const putDb = async (id, content) => {
   console.log("Accepting content and adding to database");
 
   // database connection
@@ -27,7 +27,7 @@ export const putDb = async (content) => {
   const store = tx.objectStore("jate");
 
   // ADD data to store
-  const request = store.put({ content: content });
+  const request = store.put({ id: 1, jate: content });
 
   //confirm request
   const result = await request;
@@ -35,7 +35,8 @@ export const putDb = async (content) => {
 };
 
 // Logic for a method that gets all the content from the database
-// GET and GET ALL to retrieve data from the IndexedDB database.
+// GET ALL to retrieve data from the IndexedDB database.
+// trying a get one instead of get all
 export const getDb = async () => {
   console.log("Getting from database");
 
@@ -49,7 +50,7 @@ export const getDb = async () => {
   const store = tx.objectStore("jate");
 
   // get all to retrieve all data from database
-  const request = store.getAll();
+  const request = store.get(1);
 
   //confirm request
   const result = await request;

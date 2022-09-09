@@ -24,8 +24,9 @@ butInstall.addEventListener("click", async () => {
   // Reset the deferred prompt variable, since
   // prompt() can only be called once.
   window.deferredPrompt = null;
-  // Hide the install button--I don't think I want it to be hidden after install for this app
-  // divInstall.classList.toggle('hidden', true);
+  // Hide the install button
+  divInstall.classList.toggle("hidden", true);
+  butInstall.textContent = "Installed";
 });
 
 // Handler for the `appinstalled` event
