@@ -3,7 +3,7 @@ const WebpackPwaManifest = require("webpack-pwa-manifest");
 const { InjectManifest } = require("workbox-webpack-plugin");
 const WorkboxPlugin = require("workbox-webpack-plugin");
 const path = require("path");
-// TODO: Add and configure workbox plugins for a service worker and manifest file.
+// Added and configured workbox plugins for a service worker and manifest file.
 
 module.exports = () => {
   return {
@@ -29,9 +29,9 @@ module.exports = () => {
         short_name: "Text Editor",
         description:
           "Create notes or code snippets with or without an internet connection!",
-        // colors to be determined
-        // background_color: '',
-        // theme_color: '',
+        // colors taken from inspecting given starter code
+        background_color: "#272822",
+        theme_color: "#31a9e1",
         start_url: "./",
         publicPath: "./",
         // add in icon image
