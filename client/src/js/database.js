@@ -19,10 +19,10 @@ export const putDb = async (content) => {
   console.log("Accepting content and adding to database");
 
   // database connection
-  const jate = await openDB("jate", 1);
+  const jateDb = await openDB("jate", 1);
 
   // new transaction
-  const tx = jate.transaction("jate", "readwrite");
+  const tx = jateDb.transaction("jate", "readwrite");
 
   // open object store
   const store = tx.objectStore("jate");
@@ -41,10 +41,10 @@ export const getDb = async () => {
   console.log("Getting from database");
 
   //database connection
-  const jate = await openDB("jate", 1);
+  const jateDb = await openDB("jate", 1);
 
   // new transaction
-  const tx = jate.transaction("jate", "readonly");
+  const tx = jateDb.transaction("jate", "readonly");
 
   // open object store
   const store = tx.objectStore("jate");
