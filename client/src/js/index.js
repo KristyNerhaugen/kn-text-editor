@@ -5,9 +5,12 @@ import "./database";
 import "../css/style.css";
 // import logo from images folder
 import Logo from "../images/logo.png";
+// import initdb
+import { initdb } from "./database";
 
 // on load, load logo image
 window.addEventListener("load", function () {
+  initdb();
   document.getElementById("logo").src = Logo;
 });
 

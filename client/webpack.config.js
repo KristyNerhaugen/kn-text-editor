@@ -17,7 +17,6 @@ module.exports = () => {
       filename: "[name].bundle.js",
       path: path.resolve(__dirname, "dist"),
     },
-    // Added onfigure workbox plugins for a service worker and manifest file.
     plugins: [
       // htmlWebpackPlugin
       new HtmlWebpackPlugin({
@@ -35,6 +34,14 @@ module.exports = () => {
         // theme_color: '',
         start_url: "./",
         publicPath: "./",
+        // add in icon image
+        icons: [
+          {
+            src: path.resolve("src/images/logo.png"),
+            sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join("assets", "icons"),
+          },
+        ],
       }),
       //  InjectManifest
       new InjectManifest({
