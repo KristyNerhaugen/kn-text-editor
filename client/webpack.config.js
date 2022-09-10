@@ -25,6 +25,8 @@ module.exports = () => {
       }),
       // WebpackPwaManifest
       new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
         name: "KN Text Editor",
         short_name: "Text Editor",
         description:
