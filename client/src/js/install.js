@@ -1,10 +1,12 @@
 const butInstall = document.getElementById("buttonInstall");
 
 // Logic for installing the PWA
+// used this site to better understand adding functionality to the install button: https://pwa-workshop.js.org/5-pwa-install/#add-an-installation-button
 // Event handler to the `beforeinstallprompt` event
 window.addEventListener("beforeinstallprompt", (event) => {
-  event.preventDefault();
-  installBtn.style.visibility = "visible";
+  window.defferedPrompt = event;
+  // recieved console error because I had installBtn, changed to butInstall to see if error will go away
+  butInstall.style.visibility = "visible";
 });
 
 // Implement a click event handler on the `butInstall` element
@@ -19,13 +21,13 @@ butInstall.addEventListener("click", async () => {
   // Show the install prompt.
   promptEvent.prompt();
   // Log the result
-  const result = await promptEvent.userChoice;
-  console.log("👍", "userChoice", result);
+  // const result = await promptEvent.userChoice;
+  // console.log("👍", "userChoice", result);
   // Reset the deferred prompt variable, since
   // prompt() can only be called once.
   window.deferredPrompt = null;
   // Hide the install button
-  divInstall.classList.toggle("hidden", true);
+  butInstall.classList.toggle("hidden", true);
   butInstall.textContent = "Installed";
 });
 
