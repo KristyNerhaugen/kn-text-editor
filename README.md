@@ -24,7 +24,7 @@
 
 ### This image shows the application:
 
-### [Image of KN Text Editor](Assets/KNTextEditor.png)
+### ![Image of KN Text Editor](Assets/KNTextEditor.png)
 
 ## Credits
 
