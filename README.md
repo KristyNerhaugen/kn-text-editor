@@ -24,11 +24,11 @@
 
 ### This image shows the application:
 
-### [Image of KN Text Editor]()
+### [Image of KN Text Editor](Assets/KNTextEditor.png)
 
 ## Credits
 
-### Starter code was provided to me for this application. The starter code can be found here: [starter code](https://github.com/coding-boot-camp/cautious-meme) I used what I learned in the BootCamp Spot modules and BootCamp classes to create this application. I especially used what I learned in Module 19 and the code that was given through Module 19 as a guide for this challenge. I also used the activies from virtual classes to assist me with this challenge. I used [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB) to better understand using IndexedDB, especially with the PUT method. I used this site: [codelab](https://web.dev/codelab-make-installable/) to find code for the butInstall event listener for the installation button. I used this site to better understand adding functionality to the install button: https://pwa-workshop.js.org/5-pwa-install/#add-an-installation-button. I also used the workbox documentation to better understand caching: [workbox](https://developer.chrome.com/docs/workbox/).
+### Starter code was provided to me for this application. The starter code can be found here: [starter code](https://github.com/coding-boot-camp/cautious-meme) I used what I learned in the BootCamp Spot modules and BootCamp classes to create this application. I especially used what I learned in Module 19 and the code that was given through Module 19 as a guide for this challenge. I also used the activities from virtual classes to assist me with this challenge. I used [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB) to better understand using IndexedDB, especially with the PUT method. I used this site: [codelab](https://web.dev/codelab-make-installable/) to find code for the butInstall event listener for the installation button. I used this site to better understand adding functionality to the install button: https://pwa-workshop.js.org/5-pwa-install/#add-an-installation-button. I also used the workbox documentation to better understand caching: [workbox](https://developer.chrome.com/docs/workbox/).
 
 ## License
 
